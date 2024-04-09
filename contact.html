@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="js/script.js" defer    ></script>
     <title>Egalitarian Metropolis</title>
 </head>
 
@@ -16,22 +17,21 @@
 
     <header class="header">
         <h1 class="logo">
-            Transport Equally, for Detroit!
+            Educate Equally, for Detroit!
         </h1>
         <nav>
             <ul>
                 <li><a href="index.html">Phenomena</a></li>
-                <li><a href="manifesto.html" class="active">Manifesto</a></li>
-                <li><a href="contact.html">Getting Involved</a></li>
+                <li><a href="manifesto.html">Manifesto</a></li>
+                <li><a href="contact.html" class="active">Getting Involved</a></li>
             </ul>    
         </nav>
     </header>
     
     <main>
-        
         <div class="introduction">
             <div class="text">
-                <h2 class="intro">What do we want?</h2>
+                <h2 class="intro">Why your input matters?</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                 <br>
                 <br>
@@ -39,33 +39,30 @@
             </div>
         </div>
 
-        <div class="manifesto">
-            <!-- first section -->
-            <div class="manifesto-section">
-                <div class="manifesto-text">
-                    <h2 class="intro">First</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                </div>
+        <div class="form">
+            <h2 class="intro">Your input</h2>
+            <form class = "form_content" action = "https://formspree.io/f/mzbnkgob" method = "POST">
+                <fieldset>
+                    <label for="name">Your Name<span id="nameRequired" style="color:red;">&nbsp&nbsp*This is a mendatory field</span> <br>
+                        <input type="text" name="name" placeholder="John Doe" id="name">
+                        <br><br>
+                    </label>
+                    
+                    <label for="email">
+                        Your Email<span id="emailRequired" style="color:red;">&nbsp&nbsp*This is a mendatory field</span> <br>
+                        <input type="text" name="email" placeholder="someone@example.com" id="email">
+                        <br><br>
+                    </label>
 
-                <div class="gallery">
-                    <div class="gallery-image"></div>
-                </div>
-            </div>
-
-            <!-- second section -->
-            <div class="manifesto-section">
-                <div class="manifesto-text">
-                    <h2 class="intro">Second</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                </div>
-
-                <div class="gallery">
-                    <div class="gallery-image"></div>
-                </div>
-            </div>
-
-            <!-- third section -->
-
+                    <label for="message">
+                        Your Message to us<span id="messageRequired" style="color:red;">&nbsp&nbsp*This is a mendatory field</span> <br>
+                        <textarea name="message" rows="4" cols="30" placeholder="Type your message here"> </textarea>
+                        <br><br>
+                    </label>
+    
+                    <button type="submit">Send</button>
+                </fieldset>
+            </form>
         </div>
 
     </main>

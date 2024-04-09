@@ -128,22 +128,12 @@
         justify-content: space-evenly;
         flex: 1 0 400px;
     }
-
-    figure {
-        margin: 20px auto; 
-    }
     
     .gallery-image {
+        margin: 20px auto; 
         background-color: #d9d9d9;
         width: 400px;
         height: 225px;
-    }
-
-    figcaption {
-        font-family: 'Libre Franklin';
-        font-weight: 400;
-        font-size: 20px;
-        width: 400px;
     }
 
     /* manifesto-related flex design */
@@ -170,10 +160,6 @@
         margin: 40px;
     }
 
-    .manifesto-cap {
-        width: 400px;
-    }
-
     .manifesto-text {
         display: flex;
         flex-direction: column;
@@ -185,5 +171,37 @@
     /* our spirit part */
     
 
+
+    /* contact */
+    label {
+        color: white;
+    }
+
+    .form {
+        background-color: rgb(255, 255, 255, 0.25);
+        backdrop-filter: blur(5px);
+        border-radius: 50px;
+        margin: 40px;
+        padding: 40px;
+    }
+    
+    label {
+        color: black;
+        font-family: "Libre Franklin", sans-serif;
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    input, textarea, #nameRequired, #emailRequired, #messageRequired {
+        font-family: "Libre Franklin", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    button {
+        font-family: "Libre Franklin", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+    }
 }
 
