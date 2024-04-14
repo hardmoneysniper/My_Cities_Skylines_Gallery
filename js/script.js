@@ -7,8 +7,8 @@ function addRequiredFields() {
     document.getElementById('email').setAttribute('required', true);
     document.getElementById('emailRequired').style.display = 'inline';
 
-    document.getElementById('message').setAttribute('required', true);
-    document.getElementById('messageRequired').style.display = 'inline';
+    // document.getElementById('message').setAttribute('required', true);
+    // document.getElementById('messageRequired').style.display = 'inline';
 }
 
 form.addEventListener('submit', function(event) {
@@ -16,7 +16,6 @@ form.addEventListener('submit', function(event) {
 
     if (!form.checkValidity()) {
         event.preventDefault();
-        return false;
+        window.alert("Please fill out all the mendatory fields!")
     }
-    form.innerHTML = "Thank you for your input! We will reach out with more information soon. "
 });
