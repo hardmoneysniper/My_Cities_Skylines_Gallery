@@ -19,3 +19,5 @@ form.addEventListener('submit', function(event) {
         window.alert("Please fill out all the mendatory fields!")
     }
 });
+
+
