@@ -93,11 +93,15 @@ footer p {
     font-weight: 500;
 }
 
-.footer-img {
-    width: 40px;
-    height: auto;
+.inline-img {
+    width: 60px;
+    height: 60px;
 }
 
+.footer-img {
+    width: 40px;
+    height: 40px;
+}
 /* introduction part flex design*/
 
 .introduction {
@@ -112,10 +116,19 @@ footer p {
     margin: 20px;
 }
 
+.introduction-vertical {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: rgb(255, 255, 255, 0.25);
+    backdrop-filter: blur(5px);
+    border-radius: 50px;
+    margin: 20px;
+}
+
 .text {
     display: flex;
     flex-direction: column;
-    flex: 1 0 250px;
     padding: 20px;
 }
 
@@ -172,6 +185,17 @@ div ul {
 /* contact */
 label {
     color: white;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 20px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 50px;
 }
 
 .form {
@@ -251,7 +275,7 @@ button {
     }
 
     .form {
-        margin: 40px;
+        margin: 20px;
         padding: 40px;
     }
     
