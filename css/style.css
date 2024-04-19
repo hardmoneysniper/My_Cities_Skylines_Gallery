@@ -111,7 +111,7 @@ footer p {
     align-items: center;
     justify-content: space-between;
     background-color: rgb(255, 255, 255, 0.25);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
     border-radius: 50px;
     margin: 20px;
 }
